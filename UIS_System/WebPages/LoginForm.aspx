@@ -24,14 +24,13 @@
             <div class="wrap-login100 p-t-190 p-b-30">
                 <form class="login100-form validate-form" runat="server">
                     <div class="login100-form-avatar">
-                        <img src="images/avatar-01.jpg" alt="AVATAR"/>
+                        <img src="images/avatar-01.jpg" alt="LoginIcon" />
                     </div>
 
-                    <span class="login100-form-title p-t-20 p-b-45">John Doe
-                    </span>
+                    <span class="login100-form-title p-t-20 p-b-45">Login</span>
 
                     <div class="wrap-input100 validate-input m-b-10" data-validate="Username is required">
-                        <input class="input100" type="text" name="username" placeholder="Username"/>
+                        <asp:TextBox ID="txtUsername" CssClass="input100" placeholder="Username" runat="server"></asp:TextBox>
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
                             <i class="fa fa-user"></i>
@@ -39,7 +38,7 @@
                     </div>
 
                     <div class="wrap-input100 validate-input m-b-10" data-validate="Password is required">
-                        <input class="input100" type="password" name="pass" placeholder="Password">
+                        <asp:TextBox ID="txtPassword" placeholder="password" CssClass="input100" runat="server"></asp:TextBox>
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
                             <i class="fa fa-lock"></i>
@@ -47,9 +46,7 @@
                     </div>
 
                     <div class="container-login100-form-btn p-t-10">
-                        <button class="login100-form-btn">
-                            Login
-                        </button>
+                        <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="login100-form-btn" OnClick="btnLogin_Click" />
                     </div>
 
                     <div class="text-center w-full p-t-25 p-b-230">

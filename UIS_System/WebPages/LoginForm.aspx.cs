@@ -13,5 +13,10 @@ namespace UIS_System.WebPages
         {
 
         }
+
+        protected void btnLogin_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

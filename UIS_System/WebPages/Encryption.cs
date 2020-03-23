@@ -8,9 +8,9 @@ using System.Web;
 
 namespace UIS_System.WebPages
 {
-    //Encryption
     public class Encryption
     {
+        //Encryption
         public static string Encrypt(string clearText)
         {
             string EncryptionKey = "encryptKey";

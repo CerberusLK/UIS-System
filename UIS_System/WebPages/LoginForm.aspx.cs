@@ -24,13 +24,22 @@ namespace UIS_System.WebPages
             client = new FireSharp.FirebaseClient(config);
             if (client != null)
             {
-                MessageBox.Show("Connection established");
+                Console.Beep();
             }
         }
 
-        protected void btnLogin_Click(object sender, EventArgs e)
+        protected async void btnLogin_Click(object sender, EventArgs e)
         {
-
+            FirebaseResponse response = await client.GetTaskAsync("User Data/"+txtUsername.Text);
+            Data users = response.ResultAs<Data>();
+            if (Encryption.Decrypt(users.Password) == txtPassword.Text)
+            {
+                MessageBox.Show("Access granted");
+            }
+            else
+            {
+                MessageBox.Show("Access Denied");
+            }
         }
     }
 }

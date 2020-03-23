@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignupForm.aspx.cs" Inherits="UIS_System.WebPages.SignupForm" %>
+﻿<%@ Page Async="true" Language="C#" AutoEventWireup="true" CodeBehind="SignupForm.aspx.cs" Inherits="UIS_System.WebPages.SignupForm" %>
 
 <!DOCTYPE html>
 

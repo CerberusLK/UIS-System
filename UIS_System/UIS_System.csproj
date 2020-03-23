@@ -354,6 +354,7 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
+    <Compile Include="WebPages\Data.cs" />
     <Compile Include="WebPages\Encryption.cs" />
     <Compile Include="WebPages\LoginForm.aspx.cs">
       <DependentUpon>LoginForm.aspx</DependentUpon>

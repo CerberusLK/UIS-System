@@ -19,11 +19,11 @@
 </head>
 <body>
     <div class="limiter">
-        <div class="container-login100" style="background-image: url('images/img-01.jpg');">
+        <div class="container-login100" style="background-image: url('https://localhost:44329/Resources/images/backgroundImage.jpg');">
             <div class="wrap-login100 p-t-190 p-b-30">
                 <form class="login100-form validate-form" runat="server">
                     <div class="login100-form-avatar">
-                        <img src="images/avatar-01.jpg" alt="Signup Icon" />
+                        <img src="../Resources/images/signup2.jpg" alt="Signup Icon" />
                     </div>
 
                     <span class="login100-form-title p-t-20 p-b-45">Signup
@@ -77,7 +77,7 @@
                         </span>
                     </div>
                     <asp:CompareValidator ID="CompareValidator1" runat="server"
-                        ControlToCompare="txtPassword" ControlToValidate="txtConfirmPassword" ErrorMessage="Password not match" Font-Size="Medium">
+                        ControlToCompare="txtPassword" ControlToValidate="txtConfirmPassword" ErrorMessage="Those passwords didn't match Please Try Again !" Font-Size="Medium" ForeColor="Red">
                     </asp:CompareValidator>
 
                     <div class="container-login100-form-btn p-t-10">

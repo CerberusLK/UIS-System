@@ -6,7 +6,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
+    <title>Login</title>
     <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="../Content/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="../Resources/fonts/font-awesome-4.7.0/css/font-awesome.min.css" />
@@ -20,11 +20,11 @@
 <body>
 
     <div class="limiter">
-        <div class="container-login100" style="background-image: url('images/img-01.jpg');">
+        <div class="container-login100" style="background-image: url('https://localhost:44329/Resources/images/backgroundImage.jpg');">
             <div class="wrap-login100 p-t-190 p-b-30">
                 <form class="login100-form validate-form" runat="server">
                     <div class="login100-form-avatar">
-                        <img src="images/avatar-01.jpg" alt="LoginIcon" />
+                        <img src="../Resources/images/UserIcon.png" alt="LoginIcon" />
                     </div>
 
                     <span class="login100-form-title p-t-20 p-b-45">Login</span>
@@ -38,7 +38,7 @@
                     </div>
 
                     <div class="wrap-input100 validate-input m-b-10" data-validate="Password is required">
-                        <asp:TextBox ID="txtPassword" placeholder="password" CssClass="input100" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtPassword" placeholder="password" CssClass="input100" runat="server" TextMode="Password"></asp:TextBox>
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
                             <i class="fa fa-lock"></i>
@@ -75,7 +75,6 @@
     <!-- Initialize Firebase -->
     <script src="/__/firebase/init.js"></script>
     <!--==============================================================-->
-
 
 
     <!--======================Script Files=========================-->

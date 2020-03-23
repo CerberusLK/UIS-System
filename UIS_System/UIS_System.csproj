@@ -145,9 +145,12 @@
     <Content Include="Resources\fonts\montserrat\OFL.txt" />
     <Content Include="Resources\fonts\raleway\OFL.txt" />
     <Content Include="Resources\images\avatar-01.jpg" />
+    <Content Include="Resources\images\backgroundImage.jpg" />
     <Content Include="Resources\images\icons\favicon.ico" />
     <Content Include="Resources\images\icons\icon-google.png" />
     <Content Include="Resources\images\img-01.jpg" />
+    <Content Include="Resources\images\signup2.jpg" />
+    <Content Include="Resources\images\UserIcon.png" />
     <Content Include="Resources\js\main.js" />
     <Content Include="Resources\vendor\animate\animate.css" />
     <Content Include="Resources\vendor\bootstrap\css\bootstrap-grid.css" />

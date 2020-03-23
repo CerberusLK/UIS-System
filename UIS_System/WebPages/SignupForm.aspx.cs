@@ -13,5 +13,10 @@ namespace UIS_System.WebPages
         {
 
         }
+
+        protected void btnSignup_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
